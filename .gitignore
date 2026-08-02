@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+
+# Entorno virtual
+entorno/
+venv/
+.venv/
+
+# Django
+*.sqlite3
+staticfiles/
+media/
+
+# Variables privadas
+.env
+
+# Editores y sistema
+.vscode/
+.idea/
+Thumbs.db
+Desktop.ini
+

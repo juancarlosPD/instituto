@@ -1,0 +1,1122 @@
+
+
+/* =====================================================
+   1. ENLACES Y UTILIDADES
+===================================================== */
+
+.personaje-link {
+  color: #8b0000;
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 1px dotted #8b0000;
+}
+
+.personaje-link:hover {
+  color: #b22222;
+}
+
+.section-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.35rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #8b0000;
+}
+
+
+/* =====================================================
+   2. IMÁGENES
+===================================================== */
+
+.img-retrato {
+  max-width: 700px;
+  width: auto;
+  max-height: 500px;
+  display: block;
+  margin: 0 auto;
+}
+
+.img-panoramica {
+  max-width: 1100px;
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+figcaption {
+  margin-top: 0.8rem;
+  color: #6b727c;
+}
+
+
+/* =====================================================
+   3. BOTÓN VER TEMA
+===================================================== */
+
+.tema-catedral {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.5rem;
+
+  padding: 1.3rem 1.8rem;
+  border-radius: 22px;
+
+}
+
+.tema-titulo {
+  margin: 0;
+  font-size: 1.55rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+.btn-ver-tema {
+  background-color: #96633d;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 14px;
+  white-space: nowrap;
+  box-shadow: 0 6px 14px rgba(0, 0, 0, 0.18);
+  transition: all 0.2s ease;
+}
+
+.btn-ver-tema:hover {
+  background-color: #7d4f2f;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+
+/* =====================================================
+   4. NAVBAR
+===================================================== */
+
+.navbar {
+  border-radius: 16px;
+}
+
+.navbar .nav-link,
+.navbar .navbar-brand {
+  font-size: 0.95rem;
+  white-space: nowrap;
+}
+
+
+/* =====================================================
+   5. HERO / CABECERA
+===================================================== */
+
+.hero-medieval {
+  background: linear-gradient(135deg, #f8f4ec 0%, #efe7d8 100%);
+  border: 1px solid #ddd0b8;
+  border-radius: 24px;
+  padding: 3rem;
+  box-shadow: 0 10px 30px rgba(58, 44, 24, 0.08);
+  overflow: hidden;
+}
+
+.hero-badge {
+  display: inline-block;
+  padding: 0.6rem 1rem;
+  background: #e8dfcf;
+  border: 1px solid #d2c3a5;
+  color: #6b4e2e;
+  font-weight: 700;
+  border-radius: 999px;
+}
+
+.hero-title {
+  color: #1f2937;
+  font-size: clamp(2rem, 4vw, 3.35rem);
+  line-height: 1.12;
+  font-weight: 900;
+  letter-spacing: -0.04em;
+  margin-bottom: 1.2rem;
+}
+
+.hero-text {
+  color: #263241;
+  font-size: 1.08rem;
+  line-height: 1.75;
+}
+
+.hero-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  margin-top: 2rem;
+}
+
+.hero-chips span {
+  display: inline-flex;
+  align-items: center;
+  white-space: nowrap;
+  background: #f4ede0;
+  border: 1px solid #d9ccb4;
+  color: #5f4a2c;
+  padding: 0.55rem 1rem;
+  border-radius: 999px;
+  font-weight: 600;
+}
+
+.hero-figure {
+  margin: 0;
+}
+
+.hero-figure img {
+  width: 100%;
+  height: 360px;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  border: 4px solid #fff;
+}
+
+.hero-figure figcaption {
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+
+/* =====================================================
+   6. TARJETAS
+===================================================== */
+
+.medieval-card {
+  overflow: hidden;
+  border-radius: 20px;
+  border: none;
+  transition: all 0.3s ease;
+  background: #fff;
+}
+
+.medieval-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+.medieval-img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  object-position: center;
+}
+
+
+/* =====================================================
+   7. CONTENEDORES GENERALES
+===================================================== */
+
+.contenedor {
+  background: linear-gradient(135deg, #f8f4ec 0%, #efe7d8 100%);
+  border: 1px solid #ddd0b8;
+  border-radius: 24px;
+}
+
+.main-col {
+  width: 100%;
+}
+
+
+/* =====================================================
+   8. ASIDE LATERAL
+===================================================== */
+
+.page-aside {
+  position: sticky;
+  top: 92px;
+  max-height: calc(100vh - 110px);
+}
+
+.aside-card {
+  background: #fff;
+  border: 1px solid #e7dfd2;
+  border-radius: 18px;
+  box-shadow: 0 8px 24px rgba(58, 44, 24, 0.06);
+  padding: 1.25rem 1rem;
+  max-height: calc(100vh - 110px);
+  overflow-y: auto;
+  scrollbar-width: thin;
+}
+
+.aside-card h5 {
+  font-size: 1rem;
+  font-weight: 800;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+.aside-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding-right: 0.25rem;
+}
+
+.aside-nav a {
+  text-decoration: none;
+  color: #334155;
+  font-size: 1rem;
+  padding: 0.9rem 1rem;
+  border-radius: 14px;
+  transition: all 0.2s ease;
+  border: 1px solid #c7d2fe;
+  background: #f8fafc;
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+
+.aside-nav a:hover {
+  background: #eef2ff;
+  border-color: #93c5fd;
+  color: #1e3a8a;
+  transform: translateX(3px);
+}
+
+
+/* =====================================================
+   9. SECCIONES DE CONTENIDO
+===================================================== */
+
+.section-head {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem;
+  margin-bottom: 1.25rem;
+}
+
+.section-icon {
+  width: 58px;
+  height: 58px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #e8d7bb, #d8be92);
+  box-shadow: 0 8px 20px rgba(92, 67, 33, 0.12);
+  font-size: 1.55rem;
+}
+
+.section-head h2,
+/* .section-head h3 {
+  margin: 0;
+  color: #111827;
+  font-weight: 900;
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  letter-spacing: -0.03em;
+} */
+
+.section-block,
+.intro-box {
+  background: #fff;
+  border: 1px solid #e7dfd2;
+  border-radius: 20px;
+  padding: 2rem;
+  box-shadow: 0 10px 30px rgba(58, 44, 24, 0.06);
+}
+
+.section-block p,
+.intro-box p {
+  color: #111827;
+  font-size: 1.05rem;
+  line-height: 1.85;
+  margin-bottom: 1.25rem;
+}
+
+.section-block p:last-child,
+.intro-box p:last-child {
+  margin-bottom: 0;
+}
+
+
+/* =====================================================
+   10. TIMELINE
+===================================================== */
+
+.timeline-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin: 1.5rem 0;
+}
+
+.timeline-btn {
+  border: 1px solid #b89b5e;
+  background: #f8f1df;
+  color: #4a3418;
+  padding: 0.45rem 0.9rem;
+  border-radius: 999px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.timeline-btn.active,
+.timeline-btn:hover {
+  background: #7a4f1d;
+  color: #fff;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 2rem;
+  border-left: 4px solid #b89b5e;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.8rem;
+  animation: fadeIn 0.3s ease;
+}
+
+.timeline-item::before {
+  content: "";
+  position: absolute;
+  left: -2.55rem;
+  top: 0.3rem;
+  width: 1rem;
+  height: 1rem;
+  background: #7a4f1d;
+  border: 3px solid #f5ead0;
+  border-radius: 50%;
+}
+
+.timeline-year {
+  display: inline-block;
+  background: #7a4f1d;
+  color: white;
+  padding: 0.3rem 0.7rem;
+  border-radius: 0.4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content {
+  background: #fffaf0;
+  border: 1px solid #ead8b7;
+  border-radius: 0.8rem;
+  padding: 1rem 1.2rem;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.timeline-content h4 {
+  color: #4a3418;
+  margin-bottom: 0.5rem;
+}
+
+.timeline-content p {
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+
+.timeline-item.oculto {
+  display: none;
+}
+
+
+/* =====================================================
+   11. ANIMACIONES
+===================================================== */
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+/* =====================================================
+   12. RESPONSIVE - TABLET Y MÓVIL GRANDE
+===================================================== */
+
+@media (max-width: 991px) {
+
+  .navbar {
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+  }
+
+  .navbar-collapse {
+    margin-top: 0.8rem;
+    background: #212529;
+    border-radius: 14px;
+    padding: 0.8rem;
+  }
+
+  .navbar-nav {
+    text-align: left;
+  }
+
+  .navbar .nav-link {
+    padding: 0.55rem 0.8rem;
+    border-radius: 10px;
+  }
+
+  .navbar .nav-link:hover {
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .dropdown-menu {
+    border-radius: 12px;
+    margin-top: 0.4rem;
+  }
+
+  .hero-medieval {
+    padding: 2.2rem;
+  }
+
+  .hero-figure img {
+    height: 300px;
+  }
+
+  .page-aside {
+    position: static;
+    max-height: none;
+  }
+
+  .aside-card {
+    max-height: none;
+    overflow-y: visible;
+  }
+}
+
+
+/* =====================================================
+   13. RESPONSIVE - MÓVIL
+===================================================== */
+
+@media (max-width: 768px) {
+
+  .btn-xl {
+    padding: 10px 18px;
+    font-size: 0.95rem;
+  }
+
+  .tema-catedral {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .tema-titulo {
+    font-size: 1.1rem;
+  }
+
+  .btn-ver-tema {
+    align-self: center;
+    margin-top: 0.4rem;
+  }
+
+  .medieval-img {
+    height: 170px;
+  }
+
+  .hero-medieval {
+    padding: 1.5rem;
+    border-radius: 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-text {
+    font-size: 1rem;
+  }
+
+  .hero-chips {
+    gap: 0.5rem;
+  }
+
+  .hero-chips span {
+    font-size: 0.9rem;
+    padding: 0.45rem 0.8rem;
+  }
+
+  .hero-figure img {
+    height: 240px;
+  }
+
+  .section-block,
+  .intro-box {
+    padding: 1.35rem;
+  }
+
+  .section-icon {
+    width: 50px;
+    height: 50px;
+    border-radius: 14px;
+  }
+
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-item::before {
+    left: -2.05rem;
+  }
+
+  .timeline-content {
+    padding: 0.9rem;
+  }
+}
+
+
+/* =====================================================
+   14. RESPONSIVE - MÓVIL PEQUEÑO
+===================================================== */
+
+@media (max-width: 576px) {
+
+  .btn-xl {
+    padding: 8px 14px;
+    font-size: 0.85rem;
+  }
+
+  .tema-catedral {
+    padding: 1rem;
+  }
+
+  .tema-titulo {
+    font-size: 1.65rem;
+    line-height: 1.15;
+  }
+
+  .btn-ver-tema {
+    font-size: 0.8rem;
+    padding: 0.55rem 0.8rem;
+    border-radius: 10px;
+  }
+}
+
+.hero-placeholder {
+  min-height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* border: 2px dashed #c7b898; */
+  border-radius: 20px;
+
+  background: #eee6d8;
+  color: #6b4e2e;
+
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+/* =========================================================
+   ÍNDICE Y CAPÍTULOS DE HISTORIA
+   ========================================================= */
+
+.historia-capitulos {
+  width: 100%;
+  margin: 3rem auto;
+  padding: 1.75rem;
+
+  background: linear-gradient(
+    135deg,
+    #f8f4eb 0%,
+    #f3ecdf 100%
+  );
+
+  border: 1px solid #dfcfb1;
+  border-radius: 28px;
+}
+
+.historia-layout {
+  display: grid;
+  grid-template-columns: minmax(280px, 340px) minmax(0, 1fr);
+  gap: 2rem;
+  align-items: start;
+}
+
+/* ÍNDICE LATERAL */
+
+.indice-lateral {
+  position: sticky;
+  top: 1rem;
+
+  max-height: calc(100vh - 2rem);
+  overflow-y: auto;
+
+  padding: 1.4rem;
+
+  background: #ffffff;
+  border: 1px solid #e2ded6;
+  border-radius: 22px;
+
+  box-shadow: 0 8px 24px rgba(60, 43, 23, 0.07);
+
+  scrollbar-width: thin;
+  scrollbar-color: #8c8c8c transparent;
+}
+
+.indice-lateral::-webkit-scrollbar {
+  width: 7px;
+}
+
+.indice-lateral::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.indice-lateral::-webkit-scrollbar-thumb {
+  background: #8c8c8c;
+  border-radius: 999px;
+}
+
+.indice-titulo {
+  margin: 0 0 1.2rem;
+  color: #172033;
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+
+.indice-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.indice-enlace {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+
+  min-height: 58px;
+  padding: 0.85rem 1rem;
+
+  color: #233b61;
+  font-size: 1rem;
+  line-height: 1.3;
+  text-decoration: none;
+
+  background: #f8f9fb;
+  border: 1px solid #bdccff;
+  border-radius: 17px;
+
+  transition:
+    background-color 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.indice-enlace:hover,
+.indice-enlace:focus-visible {
+  color: #19345e;
+  background: #edf2ff;
+  border-color: #78a1ff;
+  transform: translateX(3px);
+}
+
+.indice-icono {
+  flex: 0 0 auto;
+  width: 1.5rem;
+  text-align: center;
+}
+
+/* COLUMNA DE CONTENIDO */
+
+.capitulos-contenido {
+  min-width: 0;
+}
+
+.capitulo-bloque {
+  scroll-margin-top: 1.5rem;
+}
+
+.capitulo-cabecera {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  margin-bottom: 1.4rem;
+}
+
+.capitulo-cabecera h2 {
+  margin: 0;
+  color: #171c25;
+  font-size: clamp(1.8rem, 3vw, 2.35rem);
+  font-weight: 800;
+}
+
+.capitulo-icono {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 72px;
+  height: 72px;
+  flex: 0 0 72px;
+
+  font-size: 1.8rem;
+
+  background: #ecd3a4;
+  border-radius: 20px;
+}
+
+.capitulo-imagen {
+  display: block;
+  width: 100%;
+  height: auto;
+
+  border-radius: 0;
+  object-fit: cover;
+}
+
+.capitulo-texto {
+  padding-top: 1.4rem;
+
+  color: #373737;
+  font-size: 1.05rem;
+  line-height: 1.75;
+}
+
+.capitulo-texto p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 991.98px) {
+
+  .historia-capitulos {
+    margin-top: 2rem;
+    padding: 1rem;
+    border-radius: 22px;
+  }
+
+  .historia-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .indice-lateral {
+    position: static;
+
+    width: 100%;
+    max-height: none;
+    overflow: visible;
+
+    padding: 1.2rem;
+    border-radius: 20px;
+  }
+
+  .indice-enlace {
+    min-height: 62px;
+    padding: 0.9rem 1rem;
+  }
+
+  .capitulo-icono {
+    width: 62px;
+    height: 62px;
+    flex-basis: 62px;
+  }
+}
+
+@media (max-width: 575.98px) {
+
+  .historia-capitulos {
+    width: calc(100% - 1rem);
+    margin: 1.5rem auto;
+    padding: 0.75rem;
+  }
+
+  .indice-lateral {
+    padding: 1rem;
+  }
+
+  .indice-titulo {
+    font-size: 1.1rem;
+  }
+
+  .indice-enlace {
+    font-size: 1rem;
+  }
+
+  .capitulo-cabecera {
+    gap: 0.8rem;
+  }
+
+  .capitulo-cabecera h2 {
+    font-size: 1.7rem;
+  }
+
+  .capitulo-imagen {
+    width: 100%;
+  }
+}
+
+/* =========================================================
+    FOOTER
+   ========================================================= */
+
+
+.footer-historia {
+    width: 100%;
+    margin-top: 2rem;
+    padding: 1.5rem 0;
+
+    background: #f8f4eb;
+    border-top: 1px solid #dfcfb1;
+}
+
+.footer-autor {
+    text-align: center;
+    color: #6b4e2e;
+    line-height: 1.6;
+}
+
+.footer-autor strong {
+    display: block;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footer-autor span {
+    display: block;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
+/* =========================================================
+   EN PORTADA
+   ========================================================= */
+
+.portada-destacados {
+    padding: 1.8rem;
+
+    background: linear-gradient(
+        135deg,
+        #f8f4eb 0%,
+        #f3ecdf 100%
+    );
+
+    border: 1px solid #dfcfb1;
+    border-radius: 28px;
+}
+
+.destacados-cabecera {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+.destacados-cabecera h2 {
+    margin: 0;
+
+    color: #1c2430;
+    font-size: clamp(1.8rem, 3vw, 2.3rem);
+    font-weight: 800;
+}
+
+.destacados-icono {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 66px;
+    height: 66px;
+    flex: 0 0 66px;
+
+    font-size: 1.7rem;
+
+    background: #ecd3a4;
+    border-radius: 20px;
+}
+
+.destacado-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 1.5rem;
+
+    background: #ffffff;
+    border: 1px solid #e3ded4;
+    border-radius: 22px;
+
+    box-shadow: 0 8px 22px rgba(60, 43, 23, 0.06);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.destacado-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 28px rgba(60, 43, 23, 0.1);
+}
+
+.destacado-etiqueta {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+
+    margin-bottom: 1rem;
+
+    color: #7a4a18;
+    font-size: 0.88rem;
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.destacado-card h3 {
+    margin: 0 0 0.85rem;
+
+    color: #20242b;
+    font-size: 1.3rem;
+    font-weight: 800;
+    line-height: 1.3;
+}
+
+.destacado-card p {
+    color: #4e4e4e;
+    line-height: 1.65;
+}
+
+.destacado-fecha {
+    margin-bottom: 0.4rem;
+
+    color: #8b6a3f !important;
+    font-size: 0.95rem;
+    font-weight: 700;
+}
+
+.destacado-enlace {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;
+
+    margin-top: auto;
+    padding-top: 0.8rem;
+
+    color: #6b421b;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.destacado-enlace:hover {
+    color: #9a5c1c;
+    text-decoration: underline;
+}
+
+/* =========================================================
+   EN PORTADA. LÍNEA CRONOLÓGICA
+   ========================================================= */
+
+.cronologia-portada {
+    display: flex;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 760px;
+    margin-top: 2rem;
+}
+
+.cronologia-item {
+    position: relative;
+    flex: 1;
+    text-align: center;
+    padding-top: 1.8rem;
+    color: #5f431f;
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+/* Línea horizontal */
+.cronologia-item::before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #d8c39f;
+}
+
+/* Evita que la línea sobresalga por los extremos */
+.cronologia-item:first-child::before {
+    left: 50%;
+    width: 50%;
+}
+
+.cronologia-item:last-child::before {
+    width: 50%;
+}
+
+/* Punto de cada periodo */
+.cronologia-punto {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    border: 3px solid #f5efe4;
+    border-radius: 50%;
+    background-color: #9b6a2f;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.cronologia-texto {
+    display: block;
+    line-height: 1.25;
+}
+
+/* Adaptación a móviles */
+@media (max-width: 768px) {
+    .cronologia-portada {
+        flex-direction: column;
+        align-items: stretch;
+        margin-left: 0.5rem;
+    }
+
+    .cronologia-item {
+        min-height: 58px;
+        padding: 0 0 1.4rem 2.2rem;
+        text-align: left;
+    }
+
+    .cronologia-item::before {
+        top: 0;
+        left: 7px;
+        width: 2px;
+        height: 100%;
+    }
+
+    .cronologia-item:first-child::before {
+        top: 8px;
+        left: 7px;
+        width: 2px;
+        height: calc(100% - 8px);
+    }
+
+    .cronologia-item:last-child::before {
+        left: 7px;
+        width: 2px;
+        height: 8px;
+    }
+
+    .cronologia-punto {
+        top: 0;
+        left: 0;
+        transform: none;
+    }
+
+    .cronologia-texto {
+        padding-top: 0;
+    }
+}

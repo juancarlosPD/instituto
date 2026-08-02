@@ -1,0 +1,296 @@
+{% extends "bases/baseHistoria.html" %}
+{% load static %}
+
+{% block titulo %}
+Historia de España
+{% endblock %}
+
+{% block cabecera %}
+Historia de España
+{% endblock %}
+
+{% block imgCabecera %}
+{% endblock %}
+
+{% block contenido %}
+
+<section class="hero-medieval my-4">
+    <div class="row align-items-center g-5">
+
+        <div class="col-lg-7">
+
+            <div class="hero-badge mb-4">
+                Historia, personajes y acontecimientos
+            </div>
+
+            <h1 class="hero-title">
+                Historia de España
+            </h1>
+            <h4>Proyecto personal de divulgación histórica </h4>
+            <p class="hero-text">
+                Esta web nace de mi pasión por la Historia de España. No pretende sustituir a los trabajos académicos, sino acercar nuestro pasado de forma clara, rigurosa y accesible para cualquier persona interesada.
+                Cada vez que cargue un capítulo lo dejaré reflejado en el apartado "En portada".
+            </p>
+
+            <div class="cronologia-portada" aria-label="Periodos de la Historia de España">
+            <div class="cronologia-item">
+                <span class="cronologia-punto"></span>
+                <span class="cronologia-texto">Prehistoria</span>
+            </div>
+
+            <div class="cronologia-item">
+                <span class="cronologia-punto"></span>
+                <span class="cronologia-texto">Hispania romana</span>
+            </div>
+
+            <div class="cronologia-item">
+                <span class="cronologia-punto"></span>
+                <span class="cronologia-texto">Edad Media</span>
+            </div>
+
+            <div class="cronologia-item">
+                <span class="cronologia-punto"></span>
+                <span class="cronologia-texto">Edad Moderna</span>
+            </div>
+
+            <div class="cronologia-item">
+                <span class="cronologia-punto"></span>
+                <span class="cronologia-texto">Edad Contemporánea</span>
+            </div>
+        </div>
+
+        </div>
+
+        <div class="col-lg-5">
+
+            <div class="hero-placeholder">
+                <figure class="hero-figure">
+                    <img src="{% static 'images/portada/1.png' %}"
+                        alt="imagen-inicio"
+                        class="img-fluid">
+
+                </figure>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<section class="portada-destacados my-5">
+
+    <div class="destacados-cabecera">
+        <span class="destacados-icono">📰</span>
+        <h2>En portada</h2>
+    </div>
+
+    <div class="row g-4">
+
+
+        <div class="col-12 col-md-6 col-xl-4">
+
+            <article class="destacado-card">
+
+                <div class="destacado-etiqueta">
+                    <span>📰</span>
+                    Último capítulo
+                </div>
+
+                <h3>La Prehistoria en la península ibérica</h3>
+
+                <p>
+                    Un recorrido por los primeros pobladores, el arte rupestre
+                    y el nacimiento de las sociedades agrícolas.
+                </p>
+
+                <a href="#prehistoria" class="destacado-enlace">
+                    Leer capítulo
+                    <span aria-hidden="true">→</span>
+                </a>
+
+            </article>
+
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+
+            <article class="destacado-card">
+
+                <div class="destacado-etiqueta">
+                    <span>📚</span>
+                    Capítulos publicados
+                </div>
+                <ul>
+                    <li>
+                        <a href="#hispania-romana" class="destacado-enlace">
+                            Descubrir este capítulo
+                            <span aria-hidden="true">→</span>
+                        </a>
+                    </li>
+                </ul>
+
+
+
+            </article>
+        </div>
+        <div class="col-12 col-md-6 col-xl-4">
+
+            <article class="destacado-card">
+
+                <div class="destacado-etiqueta">
+                    <span>⭐</span>
+                    Recomendado
+                </div>
+
+                <h3>Hispania romana</h3>
+
+                <p>
+                    Descubre cómo Roma transformó la península y dejó una
+                    huella decisiva en la lengua, el derecho y las ciudades.
+                </p>
+
+                <a href="#hispania-romana" class="destacado-enlace">
+                    Descubrir este capítulo
+                    <span aria-hidden="true">→</span>
+                </a>
+
+            </article>
+
+        </div>
+
+
+
+
+    </div>
+
+</section>
+
+{% load static %}
+
+<section class="historia-capitulos" id="capitulos">
+
+    <div class="historia-layout">
+
+        <aside class="indice-lateral" aria-label="Índice de capítulos">
+
+            <h2 class="indice-titulo">En esta página</h2>
+
+            <nav class="indice-nav">
+
+                <a href="#prehistoria" class="indice-enlace">
+                    <span class="indice-icono">🦴</span>
+                    <span>Prehistoria</span>
+                </a>
+
+                <a href="#romana" class="indice-enlace">
+                    <span class="indice-icono">🏛️</span>
+                    <span>Hispania romana</span>
+                </a>
+
+
+
+
+
+
+
+                <a href="#recursos" class="indice-enlace">
+                    <span class="indice-icono">📚</span>
+                    <span>Recursos</span>
+                </a>
+
+            </nav>
+
+        </aside>
+
+        <main class="capitulos-contenido">
+
+            <section id="prehistoria">
+                <div class="section-head mt-3">
+                <span class="section-icon">🦴</span>
+                <h3>Prehistoria</h3>
+                </div>
+                <figure>
+                    <img src="{% static 'images/prehistoria/altamira.jpg' %}"
+                        alt="altamira"
+                        class="img-fluid">
+                </figure>
+
+                <div class="intro-box section-block">
+                <p>
+                   La Prehistoria es el periodo más antiguo de la historia de la Península Ibérica y abarca desde la llegada de los primeros seres humanos hasta la aparición de la escritura. Durante este largo proceso se produjo una profunda transformación, desde las comunidades de cazadores-recolectores hasta las primeras sociedades agrícolas y ganaderas, sentando las bases de las civilizaciones que surgirían posteriormente.
+                </p>
+
+                <div class="text-center">
+
+                    <a  href="" class="btn btn-outline-dark btn-xl mt-4">Ver tema</a>
+                </div>
+
+                </div>
+            </section>
+
+            <section id="romana">
+                <div class="section-head mt-3">
+                <span class="section-icon">🏛️</span>
+                <h3>Hispania romana</h3>
+                </div>
+                <figure >
+                    <img src="{% static 'images/hispania_romana/portada.png' %}"
+                        alt="acueducto"
+                        class="img-fluid">
+                </figure>
+
+                <div class="intro-box section-block">
+                <p>
+                    La conquista romana de la Península Ibérica, iniciada en el 218 a. C., dio origen a la Hispania romana e integró el territorio en el Imperio durante más de seis siglos. La romanización transformó profundamente la sociedad mediante la difusión del latín, el derecho, las ciudades y el cristianismo, dejando una herencia que constituye uno de los principales fundamentos de la historia y la cultura de España.
+
+                </p>
+                <div class="text-center">
+
+                    <a  href="" class="btn btn-outline-dark btn-xl mt-4">Ver tema</a>
+                </div>
+
+                </div>
+            </section>
+
+
+
+
+
+
+            <section id="recursos">
+                <div class="section-head mt-3">
+                <span class="section-icon">📚</span>
+                <h3>Recursos</h3>
+                </div>
+
+                <div class="intro-box section-block">
+                <h4>Podcast</h4>
+                <div>
+                    <ul>
+                    <!-- <li><a target="_blank" class="section-link" href="https://www.ivoox.com/batalla-simancas-del-939-1-2-audios-mp3_rf_144145709_1.html">Medievalia. La Batalla de Simancas del 939</a></li> -->
+
+                    </ul>
+                </div>
+                <h4>Vídeos</h4>
+                <div>
+                    <ul>
+
+
+                    </ul>
+                </div>
+                <h4>Web</h4>
+                <div>
+                    <ul>
+
+                    </ul>
+                </div>
+
+                </div>
+            </section>
+
+        </main>
+
+    </div>
+
+</section>
+
+{% endblock %}
