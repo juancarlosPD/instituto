@@ -1,3 +1,4 @@
+from pathlib import Path
 from django.test import TestCase
 
 from io import BytesIO
@@ -8,7 +9,7 @@ from django.core.files.uploadedfile import SimpleUploadedFile
 from django.test import override_settings
 from django.urls import reverse
 
-from .models import Alumno
+from .models import Alumno, FotoAlumno
 
 
 class AlbumTests(TestCase):
@@ -17,7 +18,7 @@ class AlbumTests(TestCase):
         Alumno.objects.create(nombre="Ana García")
         response = self.client.get(reverse("inicio"))
         self.assertContains(response, "Ana García")
-        self.assertContains(response, "Fotografía pendiente", count=2)
+        self.assertContains(response, "Fotografía pendiente", count=1)
 
     def test_admin_uploads_both_photos_and_home_displays_them(self):
         user = get_user_model().objects.create_superuser(
@@ -35,6 +36,8 @@ class AlbumTests(TestCase):
                     "nombre": "Ana García",
                     "foto_instituto": SimpleUploadedFile("antes.png", buffer.getvalue(), content_type="image/png"),
                     "foto_actual": SimpleUploadedFile("ahora.png", buffer.getvalue(), content_type="image/png"),
+                    "fotos-TOTAL_FORMS": "0",
+                    "fotos-INITIAL_FORMS": "0",
                     "_save": "Guardar",
                 })
                 self.assertEqual(response.status_code, 302)
@@ -56,3 +59,51 @@ class AlbumTests(TestCase):
         self.assertEqual(self.client.get(reverse("foto_alumno", args=[alumno.pk, "instituto"])).status_code, 404)
 
 # Create your tests here.
+
+
+class GaleriaTests(TestCase):
+    def test_additional_photos_order_and_owner(self):
+        alumno = Alumno.objects.create(nombre="Ana")
+        otro = Alumno.objects.create(nombre="Luis")
+        buffer = BytesIO()
+        Image.new("RGB", (10, 10), "blue").save(buffer, format="PNG")
+        with override_settings(STORAGES={
+            "default": {"BACKEND": "django.core.files.storage.InMemoryStorage"},
+            "staticfiles": {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage"},
+        }):
+            segunda = FotoAlumno.objects.create(alumno=alumno, orden=2, imagen=SimpleUploadedFile("segunda.png", buffer.getvalue(), content_type="image/png"))
+            primera = FotoAlumno.objects.create(alumno=alumno, orden=1, imagen=SimpleUploadedFile("primera.png", buffer.getvalue(), content_type="image/png"))
+            response = self.client.get(reverse("inicio"))
+            url = reverse("foto_alumno", args=[alumno.pk, primera.pk])
+            self.assertContains(response, url)
+            self.assertContains(response, "Fotografía pendiente", count=1)
+            self.assertEqual(list(alumno.fotos.all()), [primera, segunda])
+            photo = self.client.get(url)
+            self.assertEqual(photo.status_code, 200)
+            self.assertEqual(b"".join(photo.streaming_content), buffer.getvalue())
+            self.assertEqual(self.client.get(reverse("foto_alumno", args=[otro.pk, primera.pk])).status_code, 404)
+
+
+class PublicacionTests(TestCase):
+    def test_export_and_install_album(self):
+        from tempfile import TemporaryDirectory
+        from django.core.management import call_command
+        from django.core.files.base import ContentFile
+        with TemporaryDirectory() as folder, override_settings(BASE_DIR=Path(folder), STORAGES={
+            "default": {"BACKEND": "django.core.files.storage.InMemoryStorage"},
+            "staticfiles": {"BACKEND": "django.contrib.staticfiles.storage.StaticFilesStorage"},
+        }):
+            alumno = Alumno.objects.create(nombre="Ana local")
+            alumno.foto_instituto.save("foto.png", ContentFile(b"foto de prueba"), save=True)
+            name = alumno.foto_instituto.name
+            call_command("preparar_album")
+            data = (Path(folder) / "album_publicado" / "album.json").read_text(encoding="utf-8")
+            self.assertNotIn("auth.user", data)
+            alumno.nombre = "Nombre cambiado"
+            alumno.save()
+            alumno.foto_instituto.storage.delete(name)
+            call_command("preparar_album", instalar=True)
+            alumno.refresh_from_db()
+            self.assertEqual(alumno.nombre, "Ana local")
+            with alumno.foto_instituto.open("rb") as photo:
+                self.assertEqual(photo.read(), b"foto de prueba")

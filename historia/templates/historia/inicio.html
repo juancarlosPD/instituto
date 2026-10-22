@@ -20,34 +20,31 @@
 <section class="companeros" id="companeros" aria-labelledby="titulo-companeros">
     <p class="antetitulo">Nuestro álbum compartido</p>
     <h2 id="titulo-companeros">Los compañeros</h2>
-    <p class="descripcion">Los rostros de entonces, las sonrisas de hoy.</p>
+    <p class="descripcion">Pulsa sobre cada persona para recorrer sus fotografías.</p>
+    <div class="rejilla-companeros">
     {% for alumno in alumnos %}
     <article class="ficha-companero">
         <h3>{{ alumno.nombre }}</h3>
-        <div class="pareja-fotos">
-            <figure>
-                {% if alumno.foto_instituto %}
-                <img src="{% url 'foto_alumno' alumno.pk 'instituto' %}" alt="{{ alumno.nombre }} en el instituto" loading="lazy">
-                {% else %}
-                <div class="foto-pendiente">Fotografía pendiente</div>
-                {% endif %}
-
-            </figure>
-            <figure>
-                {% if alumno.foto_actual %}
-                <img src="{% url 'foto_alumno' alumno.pk 'actualidad' %}" alt="{{ alumno.nombre }} en la actualidad" loading="lazy">
-                {% else %}
-                <div class="foto-pendiente">Fotografía pendiente</div>
-                {% endif %}
-
-            </figure>
-        </div>
+        <button type="button" class="galeria-persona" aria-label="Ver siguiente fotografía de {{ alumno.nombre }}" disabled>
+            {% if alumno.foto_instituto %}
+            <img src="{% url 'foto_alumno' alumno.pk 'instituto' %}" alt="{{ alumno.nombre }} en el instituto" loading="lazy">
+            {% endif %}
+            {% if alumno.foto_actual %}
+            <img src="{% url 'foto_alumno' alumno.pk 'actualidad' %}" alt="{{ alumno.nombre }} en la actualidad" loading="lazy"{% if alumno.foto_instituto %} hidden{% endif %}>
+            {% endif %}
+            {% for foto in alumno.fotos.all %}
+            <img src="{% url 'foto_alumno' alumno.pk foto.pk %}" alt="{{ alumno.nombre }}, fotografía adicional {{ forloop.counter }}" loading="lazy"{% if alumno.foto_instituto or alumno.foto_actual or not forloop.first %} hidden{% endif %}>
+            {% endfor %}
+            {% if not alumno.foto_instituto and not alumno.foto_actual and not alumno.fotos.all %}
+            <span class="foto-pendiente">Fotografía pendiente</span>
+            {% endif %}
+        </button>
+        <p class="contador-fotos" aria-live="polite" aria-atomic="true"></p>
     </article>
     {% empty %}
-    <div class="album-vacio">
-        <div class="columnas-fotos"><span>En el instituto</span><span>En la actualidad</span></div>
-        <p>Pronto empezaremos a llenar este álbum con nuestras fotografías y nuestros nombres.</p>
-    </div>
+    <div class="album-vacio"><p>Pronto empezaremos a llenar este álbum con nuestras fotografías y nuestros nombres.</p></div>
     {% endfor %}
+    </div>
 </section>
+<script src="{% static 'js/galeria.js' %}" defer></script>
 {% endblock %}

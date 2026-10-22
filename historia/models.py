@@ -17,3 +17,14 @@ class Alumno(models.Model):
 
     def __str__(self):
         return self.nombre
+
+
+class FotoAlumno(models.Model):
+    alumno = models.ForeignKey(Alumno, related_name="fotos", on_delete=models.CASCADE)
+    imagen = models.ImageField("fotografía", upload_to="alumnos/galeria/")
+    orden = models.PositiveIntegerField(default=0)
+
+    class Meta:
+        ordering = ["orden", "pk"]
+        verbose_name = "fotografía adicional"
+        verbose_name_plural = "fotografías adicionales"
