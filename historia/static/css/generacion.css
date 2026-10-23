@@ -41,7 +41,8 @@ h2 { font-size:2.6rem; margin:12px 0; }
 
 .rejilla-companeros { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:24px; margin-top:32px; }
 @media(min-width:1024px) { .rejilla-companeros { grid-template-columns:repeat(4,minmax(0,1fr)); } }
-.rejilla-companeros .ficha-companero { width:100%; max-width:none; margin:0; min-width:0; }
+.rejilla-companeros .ficha-companero { display:grid; grid-template-rows:subgrid; grid-row:span 3; row-gap:0; width:100%; max-width:none; margin:0; min-width:0; }
+.rejilla-companeros .ficha-companero h3 { align-content:center; }
 .galeria-persona { display:block; width:100%; padding:0; border:0; background:transparent; color:inherit; font:inherit; border-radius:3px; cursor:pointer; }
 .galeria-persona:disabled { cursor:default; }
 .galeria-persona:focus-visible { outline:3px solid var(--acento); outline-offset:5px; }
