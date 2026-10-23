@@ -208,6 +208,15 @@
 },
 {
   "model": "historia.alumno",
+  "pk": 56,
+  "fields": {
+    "nombre": "Lozano de Medina, Mª Jesús",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
   "pk": 42,
   "fields": {
     "nombre": "Luque Esquinas, Mª Carmen",
