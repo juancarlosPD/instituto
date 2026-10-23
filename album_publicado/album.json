@@ -364,8 +364,8 @@
   "pk": 25,
   "fields": {
     "nombre": "Plaza Chaves, Juan Carlos",
-    "foto_instituto": "",
-    "foto_actual": ""
+    "foto_instituto": "alumnos/instituto/chaves.png",
+    "foto_actual": "alumnos/actualidad/juan_carlos_plaza.png"
   }
 },
 {
@@ -400,8 +400,8 @@
   "pk": 50,
   "fields": {
     "nombre": "Ramírez Perea, Mª Carmen",
-    "foto_instituto": "",
-    "foto_actual": ""
+    "foto_instituto": "alumnos/instituto/mari_carmen_ramirez.png",
+    "foto_actual": "alumnos/actualidad/mari_carmen_ramirez.png"
   }
 },
 {
@@ -418,7 +418,7 @@
   "pk": 27,
   "fields": {
     "nombre": "Rodríguez Jurado, Mª Carmen",
-    "foto_instituto": "",
+    "foto_instituto": "alumnos/instituto/carmen_rodriguez.png",
     "foto_actual": ""
   }
 },
@@ -427,7 +427,7 @@
   "pk": 28,
   "fields": {
     "nombre": "Rubio Calderón, Mª Dolores",
-    "foto_instituto": "",
+    "foto_instituto": "alumnos/instituto/md_rubio.png",
     "foto_actual": ""
   }
 },
@@ -445,7 +445,7 @@
   "pk": 30,
   "fields": {
     "nombre": "Sánchez Sánchez, Ambrosio",
-    "foto_instituto": "",
+    "foto_instituto": "alumnos/instituto/ambrosio.png",
     "foto_actual": ""
   }
 },
@@ -454,8 +454,8 @@
   "pk": 31,
   "fields": {
     "nombre": "Toledano Calderón, José Ángel",
-    "foto_instituto": "",
-    "foto_actual": ""
+    "foto_instituto": "alumnos/instituto/cholin.png",
+    "foto_actual": "alumnos/actualidad/toledano_USixMCK.png"
   }
 },
 {
@@ -463,7 +463,7 @@
   "pk": 32,
   "fields": {
     "nombre": "Toledano Fernández, Araceli",
-    "foto_instituto": "",
+    "foto_instituto": "alumnos/instituto/araceli.png",
     "foto_actual": ""
   }
 },
@@ -472,7 +472,7 @@
   "pk": 52,
   "fields": {
     "nombre": "Vélez Pla, Consuelo",
-    "foto_instituto": "",
+    "foto_instituto": "alumnos/instituto/consuelo.png",
     "foto_actual": ""
   }
 },
@@ -545,6 +545,51 @@
   "fields": {
     "alumno": 48,
     "imagen": "alumnos/galeria/manoli_pla.png",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 9,
+  "fields": {
+    "alumno": 31,
+    "imagen": "alumnos/galeria/toledano.png",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 10,
+  "fields": {
+    "alumno": 47,
+    "imagen": "alumnos/galeria/juli_pla.png",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 11,
+  "fields": {
+    "alumno": 20,
+    "imagen": "alumnos/galeria/mc_murillo_zFTKKq1.png",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 12,
+  "fields": {
+    "alumno": 27,
+    "imagen": "alumnos/galeria/carmen_rodriguez.png",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 13,
+  "fields": {
+    "alumno": 25,
+    "imagen": "alumnos/galeria/juan_carlos_plaza.jpeg.png",
     "orden": 0
   }
 }
