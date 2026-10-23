@@ -100,15 +100,6 @@
 },
 {
   "model": "historia.alumno",
-  "pk": 36,
-  "fields": {
-    "nombre": "Carretero Escalante, Pilar",
-    "foto_instituto": "alumnos/instituto/pilar.png",
-    "foto_actual": ""
-  }
-},
-{
-  "model": "historia.alumno",
   "pk": 54,
   "fields": {
     "nombre": "Castellano Molera, Lourdes",
@@ -185,6 +176,15 @@
   "fields": {
     "nombre": "Gil García, Mª Carmen",
     "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 36,
+  "fields": {
+    "nombre": "Gil García, Pilar",
+    "foto_instituto": "alumnos/instituto/pilar.png",
     "foto_actual": ""
   }
 },
