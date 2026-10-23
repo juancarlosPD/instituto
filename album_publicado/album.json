@@ -1,0 +1,551 @@
+[
+{
+  "model": "historia.alumno",
+  "pk": 4,
+  "fields": {
+    "nombre": "Agudo Torrico, Francisco Javier",
+    "foto_instituto": "alumnos/instituto/agudo.png",
+    "foto_actual": "alumnos/actualidad/torrico.png"
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 5,
+  "fields": {
+    "nombre": "Alcalá Rodríguez, Ana María",
+    "foto_instituto": "alumnos/instituto/ana_alcala.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 33,
+  "fields": {
+    "nombre": "Anguiano Cristóbal, Francisca",
+    "foto_instituto": "alumnos/instituto/paqui_anguiano.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 6,
+  "fields": {
+    "nombre": "Aranda Escribano, Manuela",
+    "foto_instituto": "alumnos/instituto/manoli_aranda.png",
+    "foto_actual": "alumnos/actualidad/manoli_aranda.png"
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 3,
+  "fields": {
+    "nombre": "Ayuso Barbero, Justo",
+    "foto_instituto": "alumnos/instituto/justo.png",
+    "foto_actual": "alumnos/actualidad/justo.png"
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 7,
+  "fields": {
+    "nombre": "Ayuso Moreno, Mª Isabel",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 8,
+  "fields": {
+    "nombre": "Barbancho González, Flor",
+    "foto_instituto": "alumnos/instituto/flor.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 34,
+  "fields": {
+    "nombre": "Barbero Rojas, Antonio",
+    "foto_instituto": "alumnos/instituto/barbero.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 9,
+  "fields": {
+    "nombre": "Caballero García, Mª Carmen",
+    "foto_instituto": "alumnos/instituto/mc_caballero.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 35,
+  "fields": {
+    "nombre": "Cabanillas Muñoz, Gloria",
+    "foto_instituto": "alumnos/instituto/gloria_cabanillas.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 10,
+  "fields": {
+    "nombre": "Capilla Pizarro, Ángela",
+    "foto_instituto": "alumnos/instituto/capilla.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 36,
+  "fields": {
+    "nombre": "Carretero Escalante, Pilar",
+    "foto_instituto": "alumnos/instituto/pilar.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 54,
+  "fields": {
+    "nombre": "Castellano Molera, Lourdes",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 12,
+  "fields": {
+    "nombre": "Castellano, López, Adela",
+    "foto_instituto": "alumnos/instituto/adela.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 11,
+  "fields": {
+    "nombre": "Castelo García, Pedro",
+    "foto_instituto": "alumnos/instituto/castelo.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 37,
+  "fields": {
+    "nombre": "Delgado Peñas, Mª Jesús",
+    "foto_instituto": "alumnos/instituto/mj_delgado.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 38,
+  "fields": {
+    "nombre": "Delgado Peñas, Paula",
+    "foto_instituto": "alumnos/instituto/paula.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 39,
+  "fields": {
+    "nombre": "Fernández Vioque, Mª Carmen",
+    "foto_instituto": "alumnos/instituto/vioque.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 13,
+  "fields": {
+    "nombre": "Flores LLanos, Damián",
+    "foto_instituto": "alumnos/instituto/damian.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 14,
+  "fields": {
+    "nombre": "García Ruíz, Alberto",
+    "foto_instituto": "alumnos/instituto/alberto.png",
+    "foto_actual": "alumnos/actualidad/Imagen_de_ChatGPT_19_oct_2026_16_49_40.png"
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 40,
+  "fields": {
+    "nombre": "Gil García, Mª Carmen",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 53,
+  "fields": {
+    "nombre": "Gómez Tejero, Manuel",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 41,
+  "fields": {
+    "nombre": "Jurado Gómez, Mercedes",
+    "foto_instituto": "alumnos/instituto/mercedes.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 42,
+  "fields": {
+    "nombre": "Luque Esquinas, Mª Carmen",
+    "foto_instituto": "alumnos/instituto/mc_luque.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 15,
+  "fields": {
+    "nombre": "López Nevado, Rosa Mª",
+    "foto_instituto": "alumnos/instituto/rosa.png",
+    "foto_actual": "alumnos/actualidad/rosa_lopez.png"
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 16,
+  "fields": {
+    "nombre": "López Sánchez, Manuel",
+    "foto_instituto": "alumnos/instituto/toqui.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 17,
+  "fields": {
+    "nombre": "Medina Fernández, Federico",
+    "foto_instituto": "alumnos/instituto/federico.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 18,
+  "fields": {
+    "nombre": "Medrán Tena, Fernando",
+    "foto_instituto": "alumnos/instituto/medran.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 19,
+  "fields": {
+    "nombre": "Montes Urbano, Francisco",
+    "foto_instituto": "alumnos/instituto/paco_montes.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 43,
+  "fields": {
+    "nombre": "Morales Romero, Florencia",
+    "foto_instituto": "alumnos/instituto/florencia.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 44,
+  "fields": {
+    "nombre": "Moyano Ruíz, Mª Isabel",
+    "foto_instituto": "alumnos/instituto/maribel_moyano.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 20,
+  "fields": {
+    "nombre": "Murillo Ayuso, Mª Carmen",
+    "foto_instituto": "alumnos/instituto/mc_murillo.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 21,
+  "fields": {
+    "nombre": "Murillo Barbero, Miguel",
+    "foto_instituto": "alumnos/instituto/miguel_murillo.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 22,
+  "fields": {
+    "nombre": "Murillo Rubio, Dimas Manuel",
+    "foto_instituto": "alumnos/instituto/dimas.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 45,
+  "fields": {
+    "nombre": "Navas Castillejo, Felicia",
+    "foto_instituto": "alumnos/instituto/felicia.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 2,
+  "fields": {
+    "nombre": "Palacio Moreno, Gregorio del",
+    "foto_instituto": "alumnos/instituto/gregorio_A3M9Tgx.png",
+    "foto_actual": "alumnos/actualidad/gregorio_YnvxWD8.png"
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 23,
+  "fields": {
+    "nombre": "Palomo Murillo, Guadalupe",
+    "foto_instituto": "alumnos/instituto/guadalupe.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 1,
+  "fields": {
+    "nombre": "Perea Díaz, Juan Carlos",
+    "foto_instituto": "alumnos/instituto/juan_carlos_perea.png",
+    "foto_actual": "alumnos/actualidad/instituto.jpeg"
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 47,
+  "fields": {
+    "nombre": "Pla Luna, Julia",
+    "foto_instituto": "alumnos/instituto/juli.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 48,
+  "fields": {
+    "nombre": "Pla Rubio, Manuela",
+    "foto_instituto": "alumnos/instituto/manoli_pla.png",
+    "foto_actual": "alumnos/actualidad/manoli_pla.png"
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 25,
+  "fields": {
+    "nombre": "Plaza Chaves, Juan Carlos",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 26,
+  "fields": {
+    "nombre": "Pulido Mújica, Miguel",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 24,
+  "fields": {
+    "nombre": "Pérez Rodríguez, Manuel",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 49,
+  "fields": {
+    "nombre": "Ramírez Márquez, Mª Antonia",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 50,
+  "fields": {
+    "nombre": "Ramírez Perea, Mª Carmen",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 51,
+  "fields": {
+    "nombre": "Rodríguez Costa, Antonia",
+    "foto_instituto": "alumnos/instituto/antonia_rodriguez.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 27,
+  "fields": {
+    "nombre": "Rodríguez Jurado, Mª Carmen",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 28,
+  "fields": {
+    "nombre": "Rubio Calderón, Mª Dolores",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 29,
+  "fields": {
+    "nombre": "Rubio Misas, Mª Felisa",
+    "foto_instituto": "alumnos/instituto/mari_felix.png",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 30,
+  "fields": {
+    "nombre": "Sánchez Sánchez, Ambrosio",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 31,
+  "fields": {
+    "nombre": "Toledano Calderón, José Ángel",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 32,
+  "fields": {
+    "nombre": "Toledano Fernández, Araceli",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
+  "pk": 52,
+  "fields": {
+    "nombre": "Vélez Pla, Consuelo",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 1,
+  "fields": {
+    "alumno": 1,
+    "imagen": "alumnos/galeria/juan_carlos.jpg",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 2,
+  "fields": {
+    "alumno": 2,
+    "imagen": "alumnos/galeria/gregorio.png",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 3,
+  "fields": {
+    "alumno": 3,
+    "imagen": "alumnos/galeria/justo.png",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 4,
+  "fields": {
+    "alumno": 14,
+    "imagen": "alumnos/galeria/alberto.png",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 5,
+  "fields": {
+    "alumno": 4,
+    "imagen": "alumnos/galeria/torrico.png",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 6,
+  "fields": {
+    "alumno": 6,
+    "imagen": "alumnos/galeria/manoli_aranda.png",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 7,
+  "fields": {
+    "alumno": 15,
+    "imagen": "alumnos/galeria/rosa_lopez.png",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 8,
+  "fields": {
+    "alumno": 48,
+    "imagen": "alumnos/galeria/manoli_pla.png",
+    "orden": 0
+  }
+}
+]
