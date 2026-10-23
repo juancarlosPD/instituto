@@ -244,6 +244,15 @@
 },
 {
   "model": "historia.alumno",
+  "pk": 55,
+  "fields": {
+    "nombre": "Medina Vigara, Sofía",
+    "foto_instituto": "alumnos/instituto/sofia.png",
+    "foto_actual": "alumnos/actualidad/sofia.png"
+  }
+},
+{
+  "model": "historia.alumno",
   "pk": 18,
   "fields": {
     "nombre": "Medrán Tena, Fernando",
