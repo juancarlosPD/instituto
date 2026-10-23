@@ -373,7 +373,7 @@
   "pk": 26,
   "fields": {
     "nombre": "Pulido Mújica, Miguel",
-    "foto_instituto": "",
+    "foto_instituto": "alumnos/instituto/pulido.png",
     "foto_actual": ""
   }
 },
@@ -382,7 +382,7 @@
   "pk": 24,
   "fields": {
     "nombre": "Pérez Rodríguez, Manuel",
-    "foto_instituto": "",
+    "foto_instituto": "alumnos/instituto/manolo_perez.png",
     "foto_actual": ""
   }
 },
@@ -391,7 +391,7 @@
   "pk": 49,
   "fields": {
     "nombre": "Ramírez Márquez, Mª Antonia",
-    "foto_instituto": "",
+    "foto_instituto": "alumnos/instituto/maria_antonia.png",
     "foto_actual": ""
   }
 },
