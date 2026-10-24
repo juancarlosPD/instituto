@@ -347,7 +347,7 @@
   "fields": {
     "nombre": "Palomo Murillo, Guadalupe",
     "foto_instituto": "alumnos/instituto/guadalupe.png",
-    "foto_actual": ""
+    "foto_actual": "alumnos/actualidad/guadalupe.png"
   }
 },
 {
@@ -608,6 +608,15 @@
   "fields": {
     "alumno": 25,
     "imagen": "alumnos/galeria/juan_carlos_plaza.jpeg.png",
+    "orden": 0
+  }
+},
+{
+  "model": "historia.fotoalumno",
+  "pk": 14,
+  "fields": {
+    "alumno": 23,
+    "imagen": "alumnos/galeria/guadalupe.png",
     "orden": 0
   }
 }
