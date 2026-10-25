@@ -190,6 +190,15 @@
 },
 {
   "model": "historia.alumno",
+  "pk": 57,
+  "fields": {
+    "nombre": "Gómez Gómez, Auxi",
+    "foto_instituto": "",
+    "foto_actual": ""
+  }
+},
+{
+  "model": "historia.alumno",
   "pk": 53,
   "fields": {
     "nombre": "Gómez Tejero, Manuel",
