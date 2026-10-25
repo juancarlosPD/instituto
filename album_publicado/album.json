@@ -203,7 +203,7 @@
   "fields": {
     "nombre": "Jurado Gómez, Mercedes",
     "foto_instituto": "alumnos/instituto/mercedes.png",
-    "foto_actual": ""
+    "foto_actual": "alumnos/actualidad/mercedes.png"
   }
 },
 {
@@ -455,7 +455,7 @@
   "fields": {
     "nombre": "Rubio Misas, Mª Felisa",
     "foto_instituto": "alumnos/instituto/mari_felix.png",
-    "foto_actual": ""
+    "foto_actual": "alumnos/actualidad/mari_felisa.jpg"
   }
 },
 {
