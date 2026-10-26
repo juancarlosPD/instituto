@@ -193,8 +193,8 @@
   "pk": 57,
   "fields": {
     "nombre": "Gómez Gómez, Auxi",
-    "foto_instituto": "",
-    "foto_actual": ""
+    "foto_instituto": "alumnos/instituto/auxi.jpg",
+    "foto_actual": "alumnos/actualidad/auxi.png"
   }
 },
 {
